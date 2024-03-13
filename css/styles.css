@@ -1082,3 +1082,99 @@ body:not(.portfolio-page) .nav-portfolio::after {
   top: 8px;
   left: 8px;
 }
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #ffffff;
+  width: 75px;
+  height: 24px;
+  top: 100px;
+  left: 828px;
+}
+form.email-input {
+  width: 453px;
+  height: 80px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscribe-text {
+  margin-bottom: 10px;
+}
+
+.email-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-email {
+  margin-right: 10px;
+}
+
+.submit {
+  margin-left: 10px;
+}
+.modal-headline {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+}
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 24px 136px 16px;
+}
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+}
+input#submit-button {
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  margin-left: 146px;
+  margin-top: 24px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+input#Name,
+input#phone,
+input#email,
+input#textbox {
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #2e2f4266;
+}
