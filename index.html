@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -69,33 +75,53 @@
               <button type="button" class="order-service" data-modal-open>Order Service</button>
             </div>
           </section>
+        </section>
         </div>
         <div class="modal is-hidden" data-modal>
           <div class="modal-content">
             <button class="close-btn" data-modal-close>
               <svg><use href="./close-btn/symbol-defs.svg#icon-close-black"></use></svg>
             </button>
+            <!-- /// Formular  // -->
             <strong><span class="modal-headline">Leave your contacts and we will call you back</span></strong>
-            <form class="modal-form">
+            <form  action="#" method="post">
               <div class="form-group">
-                <label for="Name">Name</label>
-                <input type="text" id="Name">
-                <label for="phone">Phone</label>
-                <input  type="tel" id="phone">
-                <label for="email">Email</label>
-                <input  type="email" id="email">
-                <label for="textbox">Comment</label>
-                <input placeholder="Text input" type="text" id="textbox">
-               </div>
-            </form>
-            <div class="form-checkbox">
-              <input type="checkbox">
-              <span>I accept the terms and conditions of the Privacy Policy</span>
+                <label class="label-group" for="Name">Name</label>
+                <div class="input-group">
+                <input type="text" id="Name" required>
+                <i class="fa-solid fa-user"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label-group" for="phone">Phone</label>
+                <div class="input-group">
+                <input  type="tel" id="phone" required>
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="label-group" for="email">Email</label>
+                <div class="input-group">
+                <input  type="email" id="email" required>
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="label-group" for="textbox">Comment</label>
+                <div class="input-comment">
+                 <textarea id="textbox" name="comment" placeholder="Text input" required></textarea>
+                </div>
+                </div>
+            <div class="checkbox-group">
+              <label>
+              <input type="checkbox" name="agree" required> I accept the terms and conditions of the <a href="">Privacy Policy</a>
+              </label>
             </div>
-            <input id="submit-button" type="submit">
-          </div>
+             <button type="submit" class="submit-button">Submit</button>
+               </form>
+                </div>
         </div>
-      </section>
+      
 
       <!-- Section 1 & 2 -->
       <section class="section1-2">
@@ -482,80 +508,96 @@
   
     <!-- Footer -->
 
+ 
     <footer>
       <section class="footer">
         <div class="container">
-          <section class="section94px test123">
-            <div class="logo-text">
-              <span class="logo-footer">
-                <a class="web-footer" href="index.html" type="button">WEB</a>
-                <a class="studio-footer" href="index.html" type="button"
-                  >STUDIO</a
-                >
-              </span>
-              <div class="text-footer">
-                <p class="text5">
-                  Increase the flow of customers and sales for your business
-                  with digital marketing & growth solutions.
-                </p>
-              </div>      
-            </div>   
-            <div class="social-footer">
-              <p class="social-text">Social Media</p>
-              <div class="icons-list">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="icon"
-                  aria-label="instagram-link"
-                >
-                  <svg>
-                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://twitter.com/home"
-                  target="_blank"
-                  class="icon"
-                  aria-label="instagram-link"
-                >
-                  <svg>
-                    <use href="./icons/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://facebook.com/"
-                  target="_blank"
-                  class="icon"
-                  aria-label="instagram-link"
-                >
-                  <svg>
-                    <use href="./icons/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  class="icon"
-                  aria-label="instagram-link"
-                >
-                  <svg>
-                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+          <div class="section94px">
+            <div class="position-footer">
+              <div class="logo-text">
+                <span class="logo-footer">
+                  <a class="web-footer" href="index.html">WEB</a>
+                  <a class="studio-footer" href="index.html">STUDIO </a>
+                </span>
+                <div class="text-footer">
+                  <p class="text5">
+                    Increase the flow of customers and sales for your business
+                    with digital marketing & growth solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="e-mail-input-social">
+                <div class="social">
+                  <h3 class="social-media">Social media</h3>
+                  <div class="icons-list">
+                    <a
+                      href="https://www.instagram.com"
+                      target="_blank"
+                      class="icon"
+                      aria-label="instagram-link"
+                    >
+                      <svg>
+                        <use
+                          href="./icons/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://twitter.com/?lang=ro"
+                      target="_blank"
+                      class="icon"
+                      aria-label="twitter-link"
+                    >
+                      <svg>
+                        <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="icon"
+                      aria-label="facebook-link"
+                    >
+                      <svg>
+                        <use
+                          href="./icons/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="icon"
+                      aria-label="linkedin-link"
+                    >
+                      <svg>
+                        <use
+                          href="./icons/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="e-mail-input">
+                  <label class="email-footer" for="email">Subscribe</label>
+                  <div class="input-button-container">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="E-mail"
+                    />
+                    <button class="subscribe">
+                      Subscribe <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-              <div class="subscribe-form">
-                <form class="email-input">
-                <label class="subscribe-text" for="subscribe">Subscribe</label>
-                <input class="form-email" type="email" name="Subscribe" id="subscribe" placeholder="E-mail"/>
-                 <button class="submit" type="submit">Subscribe</button>
-              </form>
-              </div>
+          </div>
         </div>
-        </section>
       </section>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="java-script/modal.js"></script>
   </body>
 </html>
