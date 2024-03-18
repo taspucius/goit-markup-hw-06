@@ -79,48 +79,31 @@
         </div>
         <div class="modal is-hidden" data-modal>
           <div class="modal-content">
-            <button class="close-btn" data-modal-close>
+           <button class="close-btn" data-modal-close>
               <svg><use href="./close-btn/symbol-defs.svg#icon-close-black"></use></svg>
             </button>
-            <!-- /// Formular  // -->
             <strong><span class="modal-headline">Leave your contacts and we will call you back</span></strong>
-            <form  action="#" method="post">
+            <form action=# class="modal-form">
               <div class="form-group">
-                <label class="label-group" for="Name">Name</label>
-                <div class="input-group">
-                <input type="text" id="Name" required>
-                <i class="fa-solid fa-user"></i>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="label-group" for="phone">Phone</label>
-                <div class="input-group">
-                <input  type="tel" id="phone" required>
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                </div>
-                <div class="form-group">
-                <label class="label-group" for="email">Email</label>
-                <div class="input-group">
-                <input  type="email" id="email" required>
-                <i class="fa-solid fa-envelope"></i>
-                </div>
-                </div>
-                <div class="form-group">
-                <label class="label-group" for="textbox">Comment</label>
-                <div class="input-comment">
-                 <textarea id="textbox" name="comment" placeholder="Text input" required></textarea>
-                </div>
-                </div>
-            <div class="checkbox-group">
-              <label>
-              <input type="checkbox" name="agree" required> I accept the terms and conditions of the <a href="">Privacy Policy</a>
-              </label>
+                <label class="form-label" for="Name">Name<i class="fa-solid fa-user"></i></label>
+                <input type="text" id="Name">
+                 <label class="form-label" for="phone">Phone<i class="fa-solid fa-phone"></i></label>
+                <input  type="tel" id="phone">
+                <label class="form-label" for="email">Email<i class="fa-solid fa-envelope"></i></label>
+
+                <input class="form-email" type="email" id="email">
+                <label class="form-label" for="textbox">Comment</label>
+                <textarea id="textbox" name="Comment" placeholder="   Text Input"></textarea>        
+               </div>
+            <div class="form-checkbox">
+              <input class="checkbox-text" id="checkbox" type="checkbox">
+            <p class="checkbox-text">I accept the terms and conditions of the</p> <a class="checkbox-ref" href="">Privacy Policy</a>
             </div>
-             <button type="submit" class="submit-button">Submit</button>
-               </form>
-                </div>
+            <input id="submit-button" type="submit" value="Send">
+          </div>
+        </form>
         </div>
+      </section>
       
 
       <!-- Section 1 & 2 -->
@@ -598,6 +581,6 @@
         </div>
       </section>
     </footer>
-    <script src="java-script/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
