@@ -1384,7 +1384,6 @@ label.form-label {
 }
 .form-label i {
   position: absolute;
-  top: 50%;
   transform: translate(12px, 28px);
   left: 0;
 }
@@ -1406,4 +1405,7 @@ textarea#textbox {
 }
 textarea#textbox:hover {
   border: 1px solid #4d5ae5;
+}
+.form-label:focus-within i {
+  color: #4d5ae5;
 }
